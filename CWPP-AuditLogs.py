@@ -32,7 +32,7 @@ print(response1)
 token = jsonResponse["token"]
 
 
-# Pull audit log from the last 24 hours this is configurable: https://prisma.pan.dev/api/cloud/cspm/audit-logs#operation/rl-audit-logs
+# adds from date to the payload.
 querystring = {"from": f"{startDateFormatted}"}
 
 headers2 = {"content-type": "application/json", "Authorization": "Bearer %s" % (token)}
